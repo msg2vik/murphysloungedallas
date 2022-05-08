@@ -1,0 +1,474 @@
+
+$white:#fff;
+$greyLight:#e3e3e3;
+$blackLight:#191919;
+
+
+
+
+
+
+$fontOleo:'Oleo Script', cursive;
+$fontPoppins:'Poppins', sans-serif;
+$fontOleoScript:'Oleo Script Swash Caps', cursive;
+
+$font14:0.8em;
+$font16:1em;
+$font18:1.2em;
+$font24:1.5em;
+$font30:2em;
+$font36:2.5em;
+$font40:3em;
+$font60:4em;
+$font90:5.5em;
+$font20:1.35em;
+
+$sectionMarginTop:3em;
+@mixin  shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@mixin shadow2 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+
+@mixin vcenter{
+    display: flex;
+    align-items: center;
+}
+@mixin hcenter{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin vhCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin spaceBtween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@mixin tringleBottom {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+}
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: $fontPoppins;
+    font-size: 1rem;
+    background-color:$white;
+    background:url(../images/half_elipse1.png) no-repeat left top 40px;
+}
+
+h1,h2,h3,p{
+    padding:0;
+    margin: 0;
+    line-height: normal;
+}
+h1{
+    font-size: $font60; 
+    font-weight: 700;
+}
+h4{
+    font-size: $font30;
+    font-weight: 700;
+}
+h5{
+    font-size: $font24;
+    font-weight: 500;
+}
+h3{
+    font-size: $font40;
+    font-weight: 700;
+}
+p{
+    font-size: $font16;
+}
+
+a{
+   
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin:0;
+    li{
+        list-style: none;
+    }
+}
+
+
+@mixin buttonSmall {
+    width: auto;
+    padding: 0.3em 1em;
+    border-radius: 30px;
+    border: none;
+    font-size: $font14;
+    color: $white;
+    background: #F15766;
+}
+
+@mixin  buttonBig {
+    
+    border-radius: 5px;
+    border: none;
+    padding: 0.5em 2em;
+    color: $white;
+}
+
+
+// styles
+header{
+    padding-top: 0.5em;
+    
+    border-bottom: 1px solid $blackLight;
+    .nav_menu{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        .nav-item{
+            padding-right: 1em;
+            padding-left: 1em;
+            position: relative;
+        }
+        .nav-item::after{
+            content: "|";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .nav-item:last-child::after{
+            display: none;
+        }
+        padding-right: 4em;
+    }
+    .contbtnArea{
+        text-align: right;
+        .contBtn{
+            padding: 0.6em 1.5em;
+            border-radius: 5px;
+            border: 1px solid $blackLight;
+            color: $blackLight;
+            transition: all ease 0.3s;
+        }
+        .contBtn:hover{
+            background-color: $blackLight;
+            color: $white;
+        }
+    }
+    
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9);
+    font-weight: 700;
+}
+.banner_heading{
+    padding-left: 10%;
+    h2{
+        padding-top: 1em;
+    }
+    h1{
+        font-size: $font90;
+        font-family: $fontOleoScript;
+        font-weight: bold;
+        line-height: 90px;
+        padding-top: 0.1em;
+    }
+    h4{
+        padding-top: 1em;
+        font-family: $fontOleoScript;
+    }
+    .hotel_nig{
+        width: 100%;
+        background-color: $blackLight;
+        padding: 1em 2em;
+        border-radius: 50px;
+        text-align: center;
+        transition: all ease 0.3s;
+        a{
+            color: $white;
+        }
+    }
+    .hotel_nig:hover{
+        background-color: $white;
+        border: 2px solid $blackLight;
+        a{
+            color: $blackLight;
+        }
+    }
+    .hotel_usa{
+        width: 100%;
+        background-color: $white;
+        border: 2px solid $blackLight;
+        padding: 1em 2em;
+        border-radius: 50px;
+        text-align: center;
+        transition: all ease 0.3s;
+        a{
+            color: $blackLight;
+        }
+    }
+    .hotel_usa:hover{
+        width: 100%;
+        background-color: $blackLight;
+        border: 0px solid $white;
+        
+        a{
+            color: $white;
+        }
+    }
+}
+
+.murphy_mainsion{
+    margin-top: 3em;
+    font-family: $fontOleoScript;
+    h3{
+        text-align: center;
+    }
+    .mur_cont{
+        font-family: $fontPoppins;
+        display: block;
+        text-align: center;
+        h4{
+            
+        }
+        h5{
+            padding-top: 1em;
+        }
+        
+    }
+}
+.wht_do{
+    background-color: $greyLight;
+    padding: 3em 0;
+    margin: 3em 0;
+    .wht_txt{
+       h4{
+           font-family: $fontPoppins;
+       } 
+       p{
+
+       }
+    }
+}
+.customer{
+    margin:3em 0;
+    .cust_text{
+        text-align: center;
+        .cust_cont{
+            .cust_img{
+                width: 90px;
+                height: 75px;
+                margin: 20px auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+footer{
+    margin: 2em 0 0;
+    background-color: $blackLight;
+    padding: 4em 0;
+    .footer_cap{
+        color: $white;
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+
+// contact
+.banner_cnt{
+    position: relative;
+    margin-top: 1em;
+    .bonner_img{
+        border-radius: 10px;
+        position: relative;
+    }
+    .banner_text{
+        background: rgba($color: #000000, $alpha: 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        h3{
+            color: $white;
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+}
+
+.mid_cont{
+    margin-top: 4em;
+    .cont_form{
+        .form-control{
+            border: 1px solid $blackLight;
+            border-radius: 5px;
+            height: 60px;
+        }
+        textarea.form-control{
+            height: 200px;
+        }
+        button{
+            background-color: $blackLight;
+            padding: 1em 4em;
+            color: $white;
+            float: right;
+        }
+    }
+    .cont_img{
+        margin-bottom: 2em;
+    }
+    .cont_tab{
+        .tab_img{
+            margin-bottom: 2em;
+        }
+        .tab-content{
+            margin-top: 2em;
+        }
+        .book_table{
+            .book_table_but{
+                border: 3px solid #191919;
+                border-radius: 10px;
+                width: 300px;
+                text-align: center;
+                height: 60px;
+                font-size: $font18;
+                line-height: 57px;
+                transition: all ease 0.3s;
+                a{
+                    color: $blackLight;
+                }
+            }
+            .book_table_but:hover{
+                background-color: $blackLight;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $white;
+    background-color: $blackLight;
+    border-radius: 30px;
+    padding: 0.8em 3em;
+}
+.nav-pills .nav-link {
+    background: $white;
+    border: 1px solid $blackLight;
+    border-radius: 30px;
+    padding: 0.8em 3em;
+    color: $blackLight;
+    margin-right: 1em;
+}
+
+
+@media all and (max-width: 767px) {
+    header{
+        border: none;
+        .nav_menu{
+            display: flex;
+            // align-items: center;
+            text-align: left;
+            .nav-item{
+                padding-right: 0em;
+                padding-left: 0;
+            }
+            .nav-item::after{
+                
+                display: none;
+            }
+            padding-right: 0em;
+        }
+        .contbtnArea{
+            text-align: left;
+            padding-top: 0.5em;
+            .contBtn{
+                padding: 0.6em 1.5em;
+            }
+            .contBtn:hover{
+                background-color: $blackLight;
+                color: $white;
+            }
+        }
+    }
+    .banner_heading{
+        padding-left: 2em;
+        h2{
+            padding-top: 1em;
+        }
+        h1{
+            font-weight: bold;
+            line-height: 70px;
+            padding-top: 0.1em;
+            font-size: $font60;
+        }
+        h4{
+            padding-top: 1em;
+            font-family: $fontOleoScript;
+        }
+        .hotel_nig{
+            width: 90%;
+            
+        }
+        .hotel_usa{
+            width: 90%;
+        }
+        
+        
+        
+    }
+    .banner_cnt{
+        position: relative;
+        margin-top: 1em;
+        .bonner_img{
+            border-radius: 10px;
+            position: relative;
+        }
+        .banner_text{
+            
+            h3{
+                color: $white;
+                font-size: $font18;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: $white;
+        background-color: $blackLight;
+        border-radius: 30px;
+        padding: 0.3em 0.8em;
+    }
+    .nav-pills .nav-link {
+        background: $white;
+        border: 1px solid $blackLight;
+        border-radius: 30px;
+        padding: 0.3em 0.8em;
+        color: $blackLight;
+        margin-right: 0.2em;
+    }
+}

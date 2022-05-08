@@ -56,124 +56,162 @@
 <!-- header -->
 <main>
 <!-- banner -->
-<div id="myCarousel" class="carousel slide mt-3 banner_cnt" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row justify-content-between">
-        <div class="col-12 col-md-6 banner_heading">
-          <h2>Welcome To </h2>
-          <h1>Murphy's <br> Mansion</h1>
-          <h4>
-            Choose from our store
-          </h4>
-          <div class="row mt-3">
-            <div class="col-12 col-md-6">
-              <div class="hotel_nig">
-                <a href="hotel-nigeria.html" >Hotel <br>in Umuaiha, Abia - Nigeria</a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 mt-3 mt-md-0">
-              <div class="hotel_usa">
-                <a href="hotel-usa.html" >Resturant  <br>in Dallas TX USA</a>
-              </div>
-            </div>
-          </div>
+<div class="banner_cnt">
+  <div class="container">
+    <div class="bonner_img">
+        <img src="images/usa-banner.png" alt="image" width="100%">
+        <div class="banner_text">
+          <h3>Resturant<br> in Dallas TX USA</h3>
         </div>
-        <div class="col-12 col-md-5">
-          <img src="images/banner_image.png" alt="" width="100%">
-        </div>
-      </div>
-      
-      
-    </div>
-    <div class="carousel-item">
-      <div class="row justify-content-between">
-        <div class="col-12 col-md-6 banner_heading">
-          <h2>Welcome To </h2>
-          <h1>Murphy's <br> Mansion</h1>
-          <h4>
-            Choose from our store
-          </h4>
-          <div class="row mt-3">
-            <div class="col-12 col-md-6">
-              <div class="hotel_nig">
-                <a href="hotel-nigeria.html" >Hotel <br>in Umuaiha, Abia - Nigeria</a>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 mt-3 mt-md-0">
-              <div class="hotel_usa">
-                <a href="hotel-usa.html" >Resturant  <br>in Dallas TX USA</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-5">
-          <img src="images/banner_image.png" alt="" width="100%">
-        </div>
-      </div>
     </div>
     
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
 <!-- banner -->
-<!-- mid -->
-<div class="murphy_mainsion" data-aos="fade-up">
-    <div class="container">
-        <h3>Where is Murphy's Mansion ?</h3>
-        <div class="row mt-5 justify-content-around">
-          <!-- cont -->
-          <div class="col-12 col-md-5 mur_cont">
-              <img src="images/umuneiha.png" width="100%" alt="image">
-              <h5>Hotel in Umuaiha</h5>
-              <h4>Abia - Nigeria</h4>
-          </div>
-          <!-- cont -->
-          <!-- cont -->
-          <div class="col-12 col-md-5 mur_cont mt-5 mt-md-0">
-            <img src="images/dallas.png" width="100%" alt="image">
-            <h5>Resturant in</h5>
-            <h4>Dallas TX USA</h4>
-          </div>
-          <!-- cont -->
-        </div>
-    </div>
-</div>
-<!-- mid -->
-<!-- wht_do -->
-<div class="wht_do" data-aos="fade-up">
+<!-- mid-c0nta -->
+<div class="mid_cont" data-aos="fade-up">
   <div class="container">
-    <div class="row align-items-center justify-content-around">
-      <div class="col-12 col-md-6 wht_txt">
-        <h4>What we do</h4>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a 
-          type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-          passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-      <div class="col-12 col-md-4 mt-3 mt-md-0">
-        <img src="images/what_img.png" width="100%" alt="image">
+    <div class="row justify-content-between">
+      <div class="col-12 cont_tab">
+        <!--  -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Chinese</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Italian</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-america" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">American</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- tab -->
+              <div class="row">
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+              </div>
+              <!-- tab -->
+              <div class="row my-4 justify-content-center book_table">
+                <div class="book_table_but">
+                  <a href="booktable.html">Book A Table Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <!-- tab -->
+              <div class="row">
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+              </div>
+              <div class="row my-4 justify-content-center book_table">
+                <div class="book_table_but">
+                  <a href="booktable.html">Book A Table Now</a>
+                </div>
+              </div>
+              <!-- tab -->
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <!-- tab -->
+              <div class="row">
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+              </div>
+              <!-- tab -->
+              <div class="row my-4 justify-content-center book_table">
+                <div class="book_table_but">
+                  <a href="booktable.html">Book A Table Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-america" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <!-- tab -->
+              <div class="row">
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+                <div class="col-12 col-md-4 tab_img">
+                  <img src="images/usa_table.png" alt="images" width="100%">
+                </div>
+              </div>
+              <!-- tab -->
+              <div class="row my-4 justify-content-center book_table">
+                <div class="book_table_but">
+                  <a href="booktable.html">Book A Table Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--  -->
       </div>
     </div>
   </div>
 </div>
-<!-- what_do -->
+<!-- mid-nt -->
 <!-- customer -->
 <div class="customer" data-aos="zoom-in">
   <div class="container">
