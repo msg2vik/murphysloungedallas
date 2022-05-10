@@ -100,6 +100,12 @@ header .contbtnArea .contBtn:hover {
 .banner_heading h2 {
   padding-top: 1em;
 }
+
+.oleo_font { 
+  font-family: "Oleo Script Swash Caps", cursive; 
+}
+
+
 .banner_heading h1 {
   font-size: 5.5em;
   font-family: "Oleo Script Swash Caps", cursive;
@@ -192,9 +198,7 @@ header .contbtnArea .contBtn:hover {
   padding: 3em 0;
   margin: 3em 0;
 }
-.wht_do .wht_txt h4 {
-  font-family: "Poppins", sans-serif;
-}
+ 
 .customer {
   margin: 3em 0;
 }
@@ -203,7 +207,7 @@ header .contbtnArea .contBtn:hover {
 }
 .customer .cust_text .cust_cont .cust_img {
   width: 90px;
-  height: 75px;
+  height: 90px;
   margin: 20px auto;
   border-radius: 50%;
 }
