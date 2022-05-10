@@ -131,6 +131,7 @@ ul{
 
 
 // styles
+
 header{
     padding-top: 0.5em;
     
@@ -232,6 +233,27 @@ header{
         }
     }
 }
+.how_book{
+    margin-top: 5em;
+    .book_brown{
+        background: #856D47;
+        width: 100%;
+        position: relative;
+        height: 370px;
+        .book_image{
+            position: absolute;
+            left: 50px;
+            top: -25px;
+        }
+    }
+    .book_text{
+        padding-left: 5em;
+        h3{
+            font-family: $fontOleoScript;
+        }
+
+    }
+}
 
 .murphy_mainsion{
     margin-top: 3em;
@@ -290,6 +312,42 @@ footer{
     }
 }
 
+.bedroom{
+    margin-top: 4em;
+    margin-bottom: 5em;
+    .bed_cnt{
+        
+        margin-bottom: 5em;
+        .bed_text{
+            order: 1;
+            h3{
+                font-family: $fontOleoScript;
+            }
+        }
+        .bed_img_cont{
+            order: 2;
+            margin-top: 1em;
+            .bed_image{
+                
+                border-radius: 175px;
+                width: 100%;
+                
+            }
+        }
+    }
+    .bed_cnt:nth-child(even){
+        .bed_text{
+            order: 2;
+            
+        }
+        .bed_img_cont{
+            order: 1;
+            
+        }
+        
+    }
+    
+}
 // contact
 .banner_cnt{
     position: relative;
@@ -297,6 +355,9 @@ footer{
     .bonner_img{
         border-radius: 10px;
         position: relative;
+        img{
+            border-radius: 40px;
+        }
     }
     .banner_text{
         background: rgba($color: #000000, $alpha: 0.5);
@@ -384,6 +445,36 @@ footer{
     margin-right: 1em;
 }
 
+.book_now{
+    border: 2px solid $blackLight;
+    width: 300px;
+    color: $blackLight;
+    height: 50px;
+    transition: all ease 0.3s;
+    line-height: 50px;
+    text-align: center;
+    a{
+        color: $blackLight;
+    }
+}
+.book_now:hover{
+    background-color: $blackLight;
+    color: $white;
+    a{
+        color: $white;
+    }
+    
+}
+.how_looks{
+    margin: 5em 0;
+    h3{
+        text-align: center;
+        font-family: $fontOleoScript;
+    }
+    .how_luks_mg{
+        margin-bottom: 1.5em;
+    }
+}
 
 @media all and (max-width: 767px) {
     header{
@@ -470,5 +561,64 @@ footer{
         padding: 0.3em 0.8em;
         color: $blackLight;
         margin-right: 0.2em;
+    }
+    .how_book{
+        margin-top: 3em;
+        .book_brown{
+            background: #856D47;
+            width: 100%;
+            position: relative;
+            height: 210px;
+            .book_image{
+                position: absolute;
+                left: 20px;
+                top: -20px;
+            }
+        }
+        .book_text{
+            padding-left: 1em;
+            margin-top: 1em;
+            h3{
+                font-family: $fontOleoScript;
+            }
+        }
+    }
+    .bedroom{
+        margin-top: 3em;
+        .bed_cnt{
+            
+            margin-bottom: 2.5em;
+            .bed_text{
+                order: 1;
+                h3{
+                    font-family: $fontOleoScript;
+                    line-height: 40px;
+                    padding-bottom: 0.3em;
+                    padding-top: 0.5em;
+                }
+            }
+            .bed_img_cont{
+                order: 2;
+                margin-top: 1em;
+                .bed_image{
+                    
+                    border-radius: 175px;
+                    width: 100%;
+                    
+                }
+            }
+        }
+        .bed_cnt:nth-child(even){
+            .bed_text{
+                order: 1;
+                
+            }
+            .bed_img_cont{
+                order: 2;
+                
+            }
+            
+        }
+        
     }
 }
