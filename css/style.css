@@ -1,3 +1,9 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid; */
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -41,6 +47,18 @@ a {
   text-decoration: none;
 }
 
+.oleo{
+font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.font-20{
+  font-size: 20px;;
+}
+
+.font-30{
+  font-size: 30px;;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -56,8 +74,7 @@ header {
 header .nav_menu {
   display: flex;
   align-items: center;
-  text-align: left;
-  padding-right: 4em;
+  text-align: left; 
 }
 header .nav_menu .nav-item {
   padding-right: 1em;
