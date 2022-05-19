@@ -1,9 +1,3 @@
-*{
-  padding: 0px;
-  margin: 0px;
-  /* border: 1px solid; */
-}
-
 body {
   margin: 0px;
   padding: 0px;
@@ -11,6 +5,19 @@ body {
   font-size: 1rem;
   background-color: #fff;
   background: url(../images/half_elipse1.png) no-repeat left top 40px;
+}
+
+.oleo{
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.font-30{
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.font-20{
+  font-size: 20px;
 }
 
 h1, h2, h3, p {
@@ -47,18 +54,6 @@ a {
   text-decoration: none;
 }
 
-.oleo{
-font-family: "Oleo Script Swash Caps", cursive;
-}
-
-.font-20{
-  font-size: 20px;;
-}
-
-.font-30{
-  font-size: 30px;;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -69,17 +64,25 @@ ul li {
 
 header {
   padding-top: 0.5em;
-  border-bottom: 1px solid #191919;
+  border-bottom: 2px solid #c1c1c1;
 }
+/* header .nav_logo {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 170px;
+} */
 header .nav_menu {
   display: flex;
   align-items: center;
-  text-align: left; 
+  text-align: left;
+  /* padding-right: 4em; */
 }
 header .nav_menu .nav-item {
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   position: relative;
+  font-size: 1em;
 }
 header .nav_menu .nav-item::after {
   content: "|";
@@ -117,12 +120,6 @@ header .contbtnArea .contBtn:hover {
 .banner_heading h2 {
   padding-top: 1em;
 }
-
-.oleo_font { 
-  font-family: "Oleo Script Swash Caps", cursive; 
-}
-
-
 .banner_heading h1 {
   font-size: 5.5em;
   font-family: "Oleo Script Swash Caps", cursive;
@@ -141,6 +138,13 @@ header .contbtnArea .contBtn:hover {
   border-radius: 50px;
   text-align: center;
   transition: all ease 0.3s;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_heading .hotel_nig span {
+  display: block;
 }
 .banner_heading .hotel_nig a {
   color: #fff;
@@ -160,6 +164,13 @@ header .contbtnArea .contBtn:hover {
   border-radius: 50px;
   text-align: center;
   transition: all ease 0.3s;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_heading .hotel_usa span {
+  display: block;
 }
 .banner_heading .hotel_usa a {
   color: #191919;
@@ -195,7 +206,7 @@ header .contbtnArea .contBtn:hover {
 }
 
 .murphy_mainsion {
-  margin-top: 3em;
+  margin-top: 5em;
   font-family: "Oleo Script Swash Caps", cursive;
 }
 .murphy_mainsion h3 {
@@ -215,16 +226,23 @@ header .contbtnArea .contBtn:hover {
   padding: 3em 0;
   margin: 3em 0;
 }
- 
+.wht_do .wht_txt h4 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 2.5em;
+}
 .customer {
   margin: 3em 0;
 }
 .customer .cust_text {
   text-align: center;
 }
+.customer .cust_text h4 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 2.5em;
+}
 .customer .cust_text .cust_cont .cust_img {
   width: 90px;
-  height: 90px;
+  height: 75px;
   margin: 20px auto;
   border-radius: 50%;
 }
@@ -295,6 +313,11 @@ footer .footer_cap {
   color: #fff;
   text-align: center;
   line-height: 60px;
+}
+.banner_cnt .banner_text h3 span {
+  font-weight: 300;
+  font-size: 0.8em;
+  display: block;
 }
 
 .mid_cont {
@@ -394,6 +417,16 @@ footer .footer_cap {
 @media all and (max-width: 767px) {
   header {
     border: none;
+  }
+  header .nav_logo_mobile {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 25px;
+  }
+  header .nav_logo_mobile span {
+    display: block;
   }
   header .nav_menu {
     display: flex;

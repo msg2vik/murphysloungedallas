@@ -2,6 +2,8 @@
 $white:#fff;
 $greyLight:#e3e3e3;
 $blackLight:#191919;
+$borderGrey:#707070;
+$gerylightExtra:#F2F2F2;
 
 
 
@@ -134,16 +136,22 @@ ul{
 
 header{
     padding-top: 0.5em;
-    
-    border-bottom: 1px solid $blackLight;
+    border-bottom: 2px solid #c1c1c1;
+    .nav_logo{
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 170px;
+    }
     .nav_menu{
         display: flex;
         align-items: center;
         text-align: left;
         .nav-item{
-            padding-right: 1em;
-            padding-left: 1em;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
             position: relative;
+            font-size: $font16;
         }
         .nav-item::after{
             content: "|";
@@ -200,6 +208,13 @@ header{
         border-radius: 50px;
         text-align: center;
         transition: all ease 0.3s;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: block;
+        }
         a{
             color: $white;
         }
@@ -219,6 +234,13 @@ header{
         border-radius: 50px;
         text-align: center;
         transition: all ease 0.3s;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: block;
+        }
         a{
             color: $blackLight;
         }
@@ -256,7 +278,7 @@ header{
 }
 
 .murphy_mainsion{
-    margin-top: 3em;
+    margin-top: 5em;
     font-family: $fontOleoScript;
     h3{
         text-align: center;
@@ -280,7 +302,8 @@ header{
     margin: 3em 0;
     .wht_txt{
        h4{
-           font-family: $fontPoppins;
+           font-family: $fontOleoScript;
+           font-size: $font36;
        } 
        p{
 
@@ -289,8 +312,13 @@ header{
 }
 .customer{
     margin:3em 0;
+    
     .cust_text{
         text-align: center;
+        h4{
+            font-family: $fontOleoScript;
+            font-size: $font36;
+        }
         .cust_cont{
             .cust_img{
                 width: 90px;
@@ -374,6 +402,11 @@ footer{
             color: $white;
             text-align: center;
             line-height: 60px;
+            span{
+                font-weight: 300;
+                font-size: $font14;
+                display: block;
+            }
         }
     }
 }
@@ -479,6 +512,16 @@ footer{
 @media all and (max-width: 767px) {
     header{
         border: none;
+        .nav_logo_mobile{
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            line-height: 25px;
+            span{
+                display: block;
+            }
+        }
         .nav_menu{
             display: flex;
             // align-items: center;
