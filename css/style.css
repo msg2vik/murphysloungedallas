@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 14px !important;
   background-color: #fff;
   background: url(../images/half_elipse1.png) no-repeat left top 40px;
 }
@@ -140,6 +140,7 @@ header .contbtnArea .contBtn:hover {
   transition: all ease 0.3s;
   height: 85px;
   display: flex;
+  font-size: 12px !important;
   justify-content: center;
   align-items: center;
 }
@@ -163,6 +164,7 @@ header .contbtnArea .contBtn:hover {
   padding: 1em 2em;
   border-radius: 50px;
   text-align: center;
+  font-size: 12px !important;
   transition: all ease 0.3s;
   height: 85px;
   display: flex;
@@ -215,7 +217,7 @@ header .contbtnArea .contBtn:hover {
 .murphy_mainsion .mur_cont {
   font-family: "Poppins", sans-serif;
   display: block;
-  text-align: center;
+  text-align: center; 
 }
 .murphy_mainsion .mur_cont h5 {
   padding-top: 1em;
@@ -390,6 +392,7 @@ footer .footer_cap {
   transition: all ease 0.3s;
   line-height: 50px;
   text-align: center;
+  cursor: pointer;
 }
 .book_now a {
   color: #191919;
