@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px !important;
   background-color: #fff;
   background: url(../images/half_elipse1.png) no-repeat left top 40px;
@@ -11,14 +15,32 @@ body {
   font-family: "Oleo Script Swash Caps", cursive;
 }
 
+
+.fw-500 {
+  font-weight: 500;
+}
+
+ 
+
+
 .font-30{
   font-size: 30px;
   line-height: 18px;
 }
 
+.font-16{
+  font-size: 16px;
+}
+
 .font-20{
   font-size: 20px;
 }
+
+.font-23{
+  font-size: 23px;
+  line-height: 18px;
+}
+
 
 h1, h2, h3, p {
   padding: 0;
@@ -114,9 +136,40 @@ header .contbtnArea .contBtn:hover {
   font-weight: 700;
 }
 
-.banner_heading {
-  padding-left: 10%;
+
+.text-golden{
+  color: #a67c00	!important;
 }
+.text-golden-light{
+  color: #ffbf00	!important;
+}
+
+	
+.bg-golden{
+  background: #a67c00	!important;
+}
+
+
+
+.text-purple{
+  color: #5a2f7e !important;
+}
+
+.bg-purple{
+  background: #5a2f7e !important;
+}
+
+
+
+.btn-primary{
+  background: #5a2f7e !important;
+  border-color: #5a2f7e !important;
+}
+
+.navbar-nav .active a{
+  color: #5a2f7e !important;
+}
+ 
 .banner_heading h2 {
   padding-top: 1em;
 }
@@ -133,7 +186,7 @@ header .contbtnArea .contBtn:hover {
 }
 .banner_heading .hotel_nig {
   width: 100%;
-  background-color: #191919;
+  background-color: #5a2f7e;
   padding: 1em 2em;
   border-radius: 50px;
   text-align: center;
@@ -151,16 +204,16 @@ header .contbtnArea .contBtn:hover {
   color: #fff;
 }
 .banner_heading .hotel_nig:hover {
-  background-color: #fff;
-  border: 2px solid #191919;
+  background-color: #a67c00;
+  border: 2px solid #fff;
 }
 .banner_heading .hotel_nig:hover a {
   color: #191919;
 }
 .banner_heading .hotel_usa {
   width: 100%;
-  background-color: #fff;
-  border: 2px solid #191919;
+  background-color: #a67c00;
+  border: 2px solid #a67c00;
   padding: 1em 2em;
   border-radius: 50px;
   text-align: center;
@@ -175,11 +228,11 @@ header .contbtnArea .contBtn:hover {
   display: block;
 }
 .banner_heading .hotel_usa a {
-  color: #191919;
+  color: #fff;
 }
 .banner_heading .hotel_usa:hover {
   width: 100%;
-  background-color: #191919;
+  background-color: #5a2f7e;
   border: 0px solid #fff;
 }
 .banner_heading .hotel_usa:hover a {
