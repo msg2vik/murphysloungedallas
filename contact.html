@@ -20,46 +20,47 @@
 </head>
 <body>
 <!-- header -->
-<header>
-  <nav class="navbar navbar-expand-md navbar-light">
+<header class="p-0">
+  <nav class="navbar navbar-expand-sm bg-light  navbar-light">
     <div class="container">
-      <div class="nav_logo_mobile">
-        <a class="navbar-brand d-block d-md-none" href="index.html">
-          <!-- <img src="images/logo_black.svg" width="200px"> -->
-          <span class="oleo text-body font-30 fw-bold">Murphys Mansion</span>
-              <span  class="text-body font-20 " >Restaurant & Lounge</span>
-        </a>
-      </div>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand d-md-flex  d-flex flex-column" href="#">
+        <span class="oleo text-body font-23 fw-bold text-golden">Murphys Mansion</span> 
+        <span  class="text-body font-16 text-purple" >Restaurant & Lounge</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mb-2 mb-md-0 col-md-5 nav_menu align-items-start align-items-md-center">
-          <li class="nav-item">
-            <a class="nav-link  " aria-current="page" href="index.html">Home</a>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item  ">
+            <a class="nav-link  fw-500" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hotel-nigeria.html">
-              Hotel <br>in Umuaiha, Abia - Nigeria
-            </a>
+            <a class="nav-link fw-500" href="hotel-nigeria.html">Hotel in Umuaiha, Abia - Nigeria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hotel-usa.html">
-              Resturant <br>in Dallas TX USA
-            </a>
+            <a class="nav-link fw-500" href="hotel-usa.html">Resturant in Dallas TX USA</a>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-500" href="#" role="button" data-bs-toggle="dropdown">Our Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="movie-theater.html">Movie theater</a></li>
+              <li><a class="dropdown-item" href="event-center.html">Event center </a></li>
+              <li><a class="dropdown-item" href="out-tenant.html">Out tenant</a></li>
+              <li><a class="dropdown-item" href="night-club.html">Night Club </a></li>
+              <li><a class="dropdown-item" href="hotel-room.html">Hotel Room </a></li>
+              <li><a class="dropdown-item" href="shopping-center.html">Shopping center</a></li>
+              <li><a class="dropdown-item" href="babarcue-spot.html">Babarcue spot </a></li>
+              <li><a class="dropdown-item" href="tennis-court.html">Tennis court </a></li>
+              <li><a class="dropdown-item" href="heli-pad.html">Heli pad</a></li>
+              <li><a class="dropdown-item" href="parking-lot.html">Parking lot </a></li>
+            </ul>
           </li>
         </ul>
-        <div class="col-md-3 d-none d-md-block nav_logo">
-          <a class=" d-md-flex flex-column" href="index.html">
-            <span class="oleo text-body text-center font-30 fw-bold">Murphys Mansion</span>
-            <span  class="  text-body text-center font-20 mt-n1" >Restaurant & Lounge</span>
-            <!-- <img src="images/logo_black.svg" width="200px"> -->
-          </a>
-        </div>
-        <div class="col-12 col-md-2 ms-auto contbtnArea">
-            <a href="contact.html" class="contBtn">Contact</a>
-        </div>
+      </div>
+
+      <div class="col-12 col-md-3 text-end"> 
+        <button type="button" class="btn btn-primary">Call Now  214-503-0446</button>
       </div>
     </div>
   </nav>
