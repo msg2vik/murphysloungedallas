@@ -21,7 +21,9 @@ body {
 }
 
  
-
+.dropdown-item.active, .dropdown-item:active { 
+  background-color: #5a2f7e;
+}
 
 .font-30{
   font-size: 30px;
@@ -86,7 +88,7 @@ ul li {
 
 header {
   padding-top: 0.5em;
-  border-bottom: 2px solid #c1c1c1;
+  border-bottom: 2px solid #e5e5e5;
 }
 /* header .nav_logo {
   position: absolute;
